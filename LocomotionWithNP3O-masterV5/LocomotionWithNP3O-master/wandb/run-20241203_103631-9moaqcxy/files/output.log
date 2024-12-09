@@ -1,0 +1,64 @@
+ppo with teacher actor
+no imitation
+MixedMlpBarlowTwinsActor(
+  (mlp_encoder): Sequential(
+    (0): Linear(in_features=225, out_features=512, bias=True)
+    (1): ELU(alpha=1.0)
+    (2): Linear(in_features=512, out_features=256, bias=True)
+    (3): ELU(alpha=1.0)
+    (4): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (5): Linear(in_features=256, out_features=128, bias=True)
+    (6): ELU(alpha=1.0)
+    (7): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (8): Linear(in_features=128, out_features=23, bias=True)
+  )
+  (actor): MixedMlp(
+    (gate): Sequential(
+      (0): Linear(in_features=68, out_features=128, bias=True)
+      (1): ELU(alpha=1.0)
+      (2): Linear(in_features=128, out_features=128, bias=True)
+      (3): ELU(alpha=1.0)
+      (4): Linear(in_features=128, out_features=4, bias=True)
+    )
+  )
+  (obs_encoder): Sequential(
+    (0): Linear(in_features=45, out_features=256, bias=True)
+    (1): ELU(alpha=1.0)
+    (2): Linear(in_features=256, out_features=128, bias=True)
+    (3): ELU(alpha=1.0)
+    (4): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (5): Linear(in_features=128, out_features=16, bias=True)
+  )
+  (bn): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+)
+running with imi loss off
+num_transitions_per_env: 24
+cost_shape: [9]
+Traceback (most recent call last):
+  File "train.py", line 29, in <module>
+    train(args)
+  File "train.py", line 19, in train
+    ppo_runner.learn(num_learning_iterations=train_cfg.runner.max_iterations, init_at_random_ep_len=True)
+  File "/home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/runner/on_constraint_policy_runner.py", line 175, in learn
+    mean_value_loss,mean_cost_value_loss,mean_viol_loss,mean_surrogate_loss, mean_imitation_loss = self.alg.update()
+  File "/home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/algorithm/np3o.py", line 198, in update
+    self.actor_critic.act(obs_batch, masks=masks_batch, hidden_states=hid_states_batch[0]) # match distribution dimension
+  File "/home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/modules/actor_critic.py", line 1493, in act
+    self.update_distribution(obs)
+  File "/home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/modules/actor_critic.py", line 1489, in update_distribution
+    mean = self.act_teacher(obs)
+  File "/home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/modules/actor_critic.py", line 1502, in act_teacher
+    mean = self.actor_teacher_backbone(obs_prop,obs_hist)
+  File "/home/jiaojunpeng/miniconda3/envs/jjp/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jiaojunpeng/miniconda3/envs/jjp/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/modules/actor_critic.py", line 254, in forward
+    mean  = self.actor(latents,obs)
+  File "/home/jiaojunpeng/miniconda3/envs/jjp/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jiaojunpeng/miniconda3/envs/jjp/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/modules/common_modules.py", line 320, in forward
+    mixed_weight = torch.matmul(coefficients, flat_weight).view(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 170.00 MiB. GPU 0 has a total capacity of 7.78 GiB of which 44.69 MiB is free. Including non-PyTorch memory, this process has 7.04 GiB memory in use. Of the allocated memory 3.43 GiB is allocated by PyTorch, and 26.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

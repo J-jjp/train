@@ -1,0 +1,122 @@
+ppo with teacher actor
+no imitation
+MixedMlpBarlowTwinsActor(
+  (mlp_encoder): Sequential(
+    (0): Linear(in_features=225, out_features=512, bias=True)
+    (1): ELU(alpha=1.0)
+    (2): Linear(in_features=512, out_features=256, bias=True)
+    (3): ELU(alpha=1.0)
+    (4): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (5): Linear(in_features=256, out_features=128, bias=True)
+    (6): ELU(alpha=1.0)
+    (7): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (8): Linear(in_features=128, out_features=23, bias=True)
+  )
+  (actor): MixedMlp(
+    (gate): Sequential(
+      (0): Linear(in_features=68, out_features=128, bias=True)
+      (1): ELU(alpha=1.0)
+      (2): Linear(in_features=128, out_features=128, bias=True)
+      (3): ELU(alpha=1.0)
+      (4): Linear(in_features=128, out_features=4, bias=True)
+    )
+  )
+  (obs_encoder): Sequential(
+    (0): Linear(in_features=45, out_features=256, bias=True)
+    (1): ELU(alpha=1.0)
+    (2): Linear(in_features=256, out_features=128, bias=True)
+    (3): ELU(alpha=1.0)
+    (4): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (5): Linear(in_features=128, out_features=16, bias=True)
+  )
+  (bn): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+)
+running with imi loss off
+num_transitions_per_env: 24
+cost_shape: [9]
+################################################################################
+                      [1m Learning iteration 0/6000 
+                       Computation: 5185 steps/s (collection: 4.075s, learning 0.664s)
+               Value function loss: 0.00144
+          cost value function loss: 0.43768
+                    Surrogate loss: -0.01687
+                         viol loss: 0.00000
+             Mean action noise std: 1.00
+                       Mean reward: 0.00
+               Mean episode length: 4.04
+      Mean episode rew_action_rate: -0.00081
+Mean episode rew_action_smoothness: -0.00176
+       Mean episode rew_ang_vel_xy: -0.00368
+         Mean episode rew_base_acc: -0.00000
+      Mean episode rew_base_height: -0.00003
+          Mean episode rew_dof_acc: -0.00094
+    Mean episode rew_feet_air_time: -0.00162
+Mean episode rew_feet_contact_forces: -0.00005
+   Mean episode rew_foot_clearance: -0.00009
+        Mean episode rew_foot_slip: -0.00051
+          Mean episode rew_hip_pos: -0.00005
+        Mean episode rew_lin_vel_z: -0.00044
+        Mean episode rew_low_speed: -0.00073
+Mean episode rew_orientation_eular: 0.00025
+           Mean episode rew_powers: -0.00002
+      Mean episode rew_stand_still: -0.00000
+   Mean episode rew_track_vel_hard: -0.00048
+ Mean episode rew_tracking_ang_vel: 0.00052
+ Mean episode rew_tracking_lin_vel: 0.00303
+ Mean episode rew_vel_mismatch_exp: 0.00038
+  Mean episode cost_acc_smoothness: 0.03538
+     Mean episode cost_base_height: 0.00003
+       Mean episode cost_collision: 0.00126
+  Mean episode cost_dof_vel_limits: 0.00002
+   Mean episode cost_feet_air_time: 0.00000
+         Mean episode cost_hip_pos: 0.00009
+       Mean episode cost_pos_limit: 0.00001
+     Mean episode cost_stand_still: 0.00031
+    Mean episode cost_torque_limit: 0.00000
+--------------------------------------------------------------------------------
+                    Iteration time: 4.74s
+                       Mean reward: 0.00
+                      [1m Learning iteration 0/6000 
+################################################################################
+                      [1m Learning iteration 1/6000 
+                       Computation: 5526 steps/s (collection: 3.916s, learning 0.531s)
+               Value function loss: 0.00013
+          cost value function loss: 0.26122
+                    Surrogate loss: -0.01572
+                         viol loss: 0.00000
+             Mean action noise std: 0.99
+                       Mean reward: 0.00
+               Mean episode length: 4.02
+      Mean episode rew_action_rate: -0.00092
+Mean episode rew_action_smoothness: -0.00201
+       Mean episode rew_ang_vel_xy: -0.00375
+         Mean episode rew_base_acc: -0.00000
+      Mean episode rew_base_height: -0.00003
+          Mean episode rew_dof_acc: -0.00103
+    Mean episode rew_feet_air_time: -0.00173
+Mean episode rew_feet_contact_forces: -0.00006
+   Mean episode rew_foot_clearance: -0.00010
+        Mean episode rew_foot_slip: -0.00052
+          Mean episode rew_hip_pos: -0.00005
+        Mean episode rew_lin_vel_z: -0.00049
+        Mean episode rew_low_speed: -0.00076
+Mean episode rew_orientation_eular: 0.00025
+           Mean episode rew_powers: -0.00002
+      Mean episode rew_stand_still: -0.00000
+   Mean episode rew_track_vel_hard: -0.00051
+ Mean episode rew_tracking_ang_vel: 0.00054
+ Mean episode rew_tracking_lin_vel: 0.00319
+ Mean episode rew_vel_mismatch_exp: 0.00039
+  Mean episode cost_acc_smoothness: 0.04037
+     Mean episode cost_base_height: 0.00003
+       Mean episode cost_collision: 0.00127
+  Mean episode cost_dof_vel_limits: 0.00003
+   Mean episode cost_feet_air_time: 0.00000
+         Mean episode cost_hip_pos: 0.00010
+       Mean episode cost_pos_limit: 0.00002
+     Mean episode cost_stand_still: 0.00026
+    Mean episode cost_torque_limit: 0.00000
+--------------------------------------------------------------------------------
+                    Iteration time: 4.45s
+                       Mean reward: 0.00
+                      [1m Learning iteration 1/6000 

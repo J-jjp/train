@@ -1,0 +1,26 @@
+2024-12-03 15:07:58,890 INFO    MainThread:69840 [wandb_setup.py:_flush():76] Configure stats pid to 69840
+2024-12-03 15:07:58,890 INFO    MainThread:69840 [wandb_setup.py:_flush():76] Loading settings from /home/jiaojunpeng/.config/wandb/settings
+2024-12-03 15:07:58,890 INFO    MainThread:69840 [wandb_setup.py:_flush():76] Loading settings from /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/settings
+2024-12-03 15:07:58,890 INFO    MainThread:69840 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-12-03 15:07:58,890 INFO    MainThread:69840 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/train.py', 'program': 'train.py'}
+2024-12-03 15:07:58,890 INFO    MainThread:69840 [wandb_init.py:_log_setup():461] Logging user logs to /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150758-yvgzjqor/logs/debug.log
+2024-12-03 15:07:58,890 INFO    MainThread:69840 [wandb_init.py:_log_setup():462] Logging internal logs to /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150758-yvgzjqor/logs/debug-internal.log
+2024-12-03 15:07:58,890 INFO    MainThread:69840 [wandb_init.py:init():495] calling init triggers
+2024-12-03 15:07:58,890 INFO    MainThread:69840 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {}
+2024-12-03 15:07:58,890 INFO    MainThread:69840 [wandb_init.py:init():548] starting backend
+2024-12-03 15:07:58,890 INFO    MainThread:69840 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-12-03 15:07:58,903 INFO    MainThread:69840 [backend.py:ensure_launched():217] starting backend process...
+2024-12-03 15:07:58,916 INFO    MainThread:69840 [backend.py:ensure_launched():222] started backend process with pid: 70004
+2024-12-03 15:07:58,917 INFO    MainThread:69840 [wandb_init.py:init():558] backend started and connected
+2024-12-03 15:07:58,921 INFO    MainThread:69840 [wandb_init.py:init():634] updated telemetry
+2024-12-03 15:07:58,949 INFO    MainThread:69840 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2024-12-03 15:08:00,211 INFO    MainThread:69840 [wandb_run.py:_on_init():1919] communicating current version
+2024-12-03 15:08:01,220 INFO    MainThread:69840 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.18.7 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-12-03 15:08:01,220 INFO    MainThread:69840 [wandb_init.py:init():700] starting run threads in backend
+2024-12-03 15:08:02,454 INFO    MainThread:69840 [wandb_run.py:_console_start():1893] atexit reg
+2024-12-03 15:08:02,454 INFO    MainThread:69840 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2024-12-03 15:08:02,454 INFO    MainThread:69840 [wandb_run.py:_redirect():1771] Redirecting console.
+2024-12-03 15:08:02,455 INFO    MainThread:69840 [wandb_run.py:_redirect():1827] Redirects installed.
+2024-12-03 15:08:02,455 INFO    MainThread:69840 [wandb_init.py:init():732] run started, returning control to user process

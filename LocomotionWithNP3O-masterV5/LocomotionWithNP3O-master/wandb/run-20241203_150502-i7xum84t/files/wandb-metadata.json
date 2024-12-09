@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.11.0-27-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2024-12-03T07:05:04.419994",
+    "startedAt": "2024-12-03T07:05:02.295803",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3060 Ti",
+    "gpu_count": 1,
+    "cpu_count": 24,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/train.py",
+    "git": {
+        "remote": "git@github.com:J-jjp/gym_environment.git",
+        "commit": "87c830d8b972b35274c3c225c83ded94d35afb19"
+    },
+    "email": "2053930980@qq.com",
+    "root": "/home/jiaojunpeng/isaac",
+    "host": "xyj",
+    "username": "jiaojunpeng",
+    "executable": "/home/jiaojunpeng/miniconda3/envs/jjp/bin/python"
+}

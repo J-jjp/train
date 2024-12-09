@@ -1,0 +1,241 @@
+2024-12-03 15:01:54,962 INFO    MainThread:68504 [internal.py:wandb_internal():90] W&B internal server running at pid: 68504, started at: 2024-12-03 15:01:54.962415
+2024-12-03 15:01:54,964 DEBUG   SenderThread:68504 [sender.py:send():236] send: header
+2024-12-03 15:01:54,964 DEBUG   SenderThread:68504 [sender.py:send():236] send: run
+2024-12-03 15:01:54,965 INFO    WriterThread:68504 [datastore.py:open_for_write():75] open: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/run-djl68fch.wandb
+2024-12-03 15:01:55,769 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: check_version
+2024-12-03 15:01:55,777 INFO    SenderThread:68504 [dir_watcher.py:__init__():216] watching files in: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files
+2024-12-03 15:01:55,778 INFO    SenderThread:68504 [sender.py:_start_run_threads():815] run started: djl68fch with start time 1733209314
+2024-12-03 15:01:55,778 DEBUG   SenderThread:68504 [sender.py:send():236] send: summary
+2024-12-03 15:01:55,778 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:01:55,779 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: check_version
+2024-12-03 15:01:56,780 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_created():269] file/dir created: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json
+2024-12-03 15:01:56,824 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: run_start
+2024-12-03 15:01:56,848 DEBUG   HandlerThread:68504 [meta.py:__init__():35] meta init
+2024-12-03 15:01:56,848 DEBUG   HandlerThread:68504 [meta.py:__init__():49] meta init done
+2024-12-03 15:01:56,848 DEBUG   HandlerThread:68504 [meta.py:probe():209] probe
+2024-12-03 15:01:56,854 DEBUG   HandlerThread:68504 [meta.py:_setup_git():199] setup git
+2024-12-03 15:01:56,861 DEBUG   HandlerThread:68504 [meta.py:_setup_git():206] setup git done
+2024-12-03 15:01:56,862 DEBUG   HandlerThread:68504 [meta.py:_save_pip():53] save pip
+2024-12-03 15:01:56,862 DEBUG   HandlerThread:68504 [meta.py:_save_pip():67] save pip done
+2024-12-03 15:01:56,862 DEBUG   HandlerThread:68504 [meta.py:_save_conda():74] save conda
+2024-12-03 15:01:57,778 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_created():269] file/dir created: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/conda-environment.yaml
+2024-12-03 15:01:57,778 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_created():269] file/dir created: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/requirements.txt
+2024-12-03 15:01:58,030 DEBUG   HandlerThread:68504 [meta.py:_save_conda():84] save conda done
+2024-12-03 15:01:58,030 DEBUG   HandlerThread:68504 [meta.py:probe():247] probe done
+2024-12-03 15:01:58,053 DEBUG   SenderThread:68504 [sender.py:send():236] send: files
+2024-12-03 15:01:58,053 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2024-12-03 15:01:58,055 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: stop_status
+2024-12-03 15:01:58,056 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: stop_status
+2024-12-03 15:01:58,778 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/conda-environment.yaml
+2024-12-03 15:01:58,778 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_created():269] file/dir created: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-metadata.json
+2024-12-03 15:01:58,778 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_created():269] file/dir created: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:01:58,830 DEBUG   SenderThread:68504 [sender.py:send():236] send: telemetry
+2024-12-03 15:01:59,772 INFO    Thread-11 :68504 [upload_job.py:push():138] Uploaded file /tmp/tmplf8zmlz2wandb/q9nx3dby-wandb-metadata.json
+2024-12-03 15:02:00,778 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:03,398 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: partial_history
+2024-12-03 15:02:04,779 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:07,831 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: partial_history
+2024-12-03 15:02:07,833 DEBUG   SenderThread:68504 [sender.py:send():236] send: history
+2024-12-03 15:02:07,833 DEBUG   SenderThread:68504 [sender.py:send():236] send: summary
+2024-12-03 15:02:07,835 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:02:08,780 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json
+2024-12-03 15:02:08,781 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:12,331 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: partial_history
+2024-12-03 15:02:12,332 DEBUG   SenderThread:68504 [sender.py:send():236] send: history
+2024-12-03 15:02:12,332 DEBUG   SenderThread:68504 [sender.py:send():236] send: summary
+2024-12-03 15:02:12,333 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:02:12,781 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json
+2024-12-03 15:02:13,985 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: stop_status
+2024-12-03 15:02:13,985 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: stop_status
+2024-12-03 15:02:14,782 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:16,813 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: partial_history
+2024-12-03 15:02:16,814 DEBUG   SenderThread:68504 [sender.py:send():236] send: history
+2024-12-03 15:02:16,814 DEBUG   SenderThread:68504 [sender.py:send():236] send: summary
+2024-12-03 15:02:16,816 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:02:17,782 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json
+2024-12-03 15:02:18,783 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:21,231 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: partial_history
+2024-12-03 15:02:21,232 DEBUG   SenderThread:68504 [sender.py:send():236] send: history
+2024-12-03 15:02:21,232 DEBUG   SenderThread:68504 [sender.py:send():236] send: summary
+2024-12-03 15:02:21,232 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:02:21,783 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json
+2024-12-03 15:02:23,784 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:25,043 DEBUG   SenderThread:68504 [sender.py:send():236] send: stats
+2024-12-03 15:02:25,751 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: partial_history
+2024-12-03 15:02:25,947 DEBUG   SenderThread:68504 [sender.py:send():236] send: history
+2024-12-03 15:02:25,947 DEBUG   SenderThread:68504 [sender.py:send():236] send: summary
+2024-12-03 15:02:25,948 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:02:26,785 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json
+2024-12-03 15:02:26,785 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/config.yaml
+2024-12-03 15:02:27,785 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:29,973 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: stop_status
+2024-12-03 15:02:29,973 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: stop_status
+2024-12-03 15:02:30,181 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: partial_history
+2024-12-03 15:02:30,967 DEBUG   SenderThread:68504 [sender.py:send():236] send: history
+2024-12-03 15:02:30,968 DEBUG   SenderThread:68504 [sender.py:send():236] send: summary
+2024-12-03 15:02:30,969 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:02:31,786 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json
+2024-12-03 15:02:31,786 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:34,853 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: partial_history
+2024-12-03 15:02:34,855 DEBUG   SenderThread:68504 [sender.py:send():236] send: history
+2024-12-03 15:02:34,855 DEBUG   SenderThread:68504 [sender.py:send():236] send: summary
+2024-12-03 15:02:34,856 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:02:35,787 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json
+2024-12-03 15:02:35,787 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:39,274 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: partial_history
+2024-12-03 15:02:39,275 DEBUG   SenderThread:68504 [sender.py:send():236] send: history
+2024-12-03 15:02:39,275 DEBUG   SenderThread:68504 [sender.py:send():236] send: summary
+2024-12-03 15:02:39,277 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:02:39,788 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json
+2024-12-03 15:02:41,789 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:42,117 WARNING MainThread:68504 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2024-12-03 15:02:42,233 DEBUG   SenderThread:68504 [sender.py:send():236] send: telemetry
+2024-12-03 15:02:43,790 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:44,884 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:44,884 DEBUG   SenderThread:68504 [sender.py:send():236] send: exit
+2024-12-03 15:02:44,884 INFO    SenderThread:68504 [sender.py:send_exit():372] handling exit code: 255
+2024-12-03 15:02:44,884 INFO    SenderThread:68504 [sender.py:send_exit():374] handling runtime: 48
+2024-12-03 15:02:44,884 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:02:44,885 INFO    SenderThread:68504 [sender.py:send_exit():380] send defer
+2024-12-03 15:02:44,885 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:44,885 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: defer
+2024-12-03 15:02:44,885 INFO    HandlerThread:68504 [handler.py:handle_request_defer():163] handle defer: 0
+2024-12-03 15:02:44,885 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: defer
+2024-12-03 15:02:44,885 INFO    SenderThread:68504 [sender.py:send_request_defer():389] handle sender defer: 0
+2024-12-03 15:02:44,885 INFO    SenderThread:68504 [sender.py:transition_state():393] send defer: 1
+2024-12-03 15:02:44,885 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: defer
+2024-12-03 15:02:44,885 INFO    HandlerThread:68504 [handler.py:handle_request_defer():163] handle defer: 1
+2024-12-03 15:02:44,948 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: defer
+2024-12-03 15:02:44,949 INFO    SenderThread:68504 [sender.py:send_request_defer():389] handle sender defer: 1
+2024-12-03 15:02:44,949 INFO    SenderThread:68504 [sender.py:transition_state():393] send defer: 2
+2024-12-03 15:02:44,949 DEBUG   SenderThread:68504 [sender.py:send():236] send: stats
+2024-12-03 15:02:44,949 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: defer
+2024-12-03 15:02:44,949 INFO    HandlerThread:68504 [handler.py:handle_request_defer():163] handle defer: 2
+2024-12-03 15:02:44,950 DEBUG   SenderThread:68504 [sender.py:send():236] send: history
+2024-12-03 15:02:44,951 DEBUG   SenderThread:68504 [sender.py:send():236] send: summary
+2024-12-03 15:02:44,951 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:02:44,951 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: defer
+2024-12-03 15:02:44,951 INFO    SenderThread:68504 [sender.py:send_request_defer():389] handle sender defer: 2
+2024-12-03 15:02:44,951 INFO    SenderThread:68504 [sender.py:transition_state():393] send defer: 3
+2024-12-03 15:02:44,951 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: defer
+2024-12-03 15:02:44,951 INFO    HandlerThread:68504 [handler.py:handle_request_defer():163] handle defer: 3
+2024-12-03 15:02:44,951 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: defer
+2024-12-03 15:02:44,951 INFO    SenderThread:68504 [sender.py:send_request_defer():389] handle sender defer: 3
+2024-12-03 15:02:44,951 INFO    SenderThread:68504 [sender.py:transition_state():393] send defer: 4
+2024-12-03 15:02:44,951 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: defer
+2024-12-03 15:02:44,951 INFO    HandlerThread:68504 [handler.py:handle_request_defer():163] handle defer: 4
+2024-12-03 15:02:44,952 DEBUG   SenderThread:68504 [sender.py:send():236] send: summary
+2024-12-03 15:02:44,952 INFO    SenderThread:68504 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-03 15:02:44,952 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: defer
+2024-12-03 15:02:44,952 INFO    SenderThread:68504 [sender.py:send_request_defer():389] handle sender defer: 4
+2024-12-03 15:02:44,952 INFO    SenderThread:68504 [sender.py:transition_state():393] send defer: 5
+2024-12-03 15:02:44,952 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: defer
+2024-12-03 15:02:44,952 INFO    HandlerThread:68504 [handler.py:handle_request_defer():163] handle defer: 5
+2024-12-03 15:02:44,953 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: defer
+2024-12-03 15:02:44,953 INFO    SenderThread:68504 [sender.py:send_request_defer():389] handle sender defer: 5
+2024-12-03 15:02:44,986 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:45,790 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json
+2024-12-03 15:02:45,790 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:45,877 INFO    SenderThread:68504 [sender.py:transition_state():393] send defer: 6
+2024-12-03 15:02:45,877 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:45,877 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: defer
+2024-12-03 15:02:45,878 INFO    HandlerThread:68504 [handler.py:handle_request_defer():163] handle defer: 6
+2024-12-03 15:02:45,878 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: defer
+2024-12-03 15:02:45,878 INFO    SenderThread:68504 [sender.py:send_request_defer():389] handle sender defer: 6
+2024-12-03 15:02:45,878 INFO    SenderThread:68504 [dir_watcher.py:finish():353] shutting down directory watcher
+2024-12-03 15:02:45,978 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:46,790 INFO    Thread-7  :68504 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/config.yaml
+2024-12-03 15:02:46,791 INFO    SenderThread:68504 [dir_watcher.py:finish():383] scan: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files
+2024-12-03 15:02:46,791 INFO    SenderThread:68504 [dir_watcher.py:finish():397] scan save: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/config.yaml config.yaml
+2024-12-03 15:02:46,791 INFO    SenderThread:68504 [dir_watcher.py:finish():397] scan save: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log output.log
+2024-12-03 15:02:46,791 INFO    SenderThread:68504 [dir_watcher.py:finish():397] scan save: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/conda-environment.yaml conda-environment.yaml
+2024-12-03 15:02:46,794 INFO    SenderThread:68504 [dir_watcher.py:finish():397] scan save: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-metadata.json wandb-metadata.json
+2024-12-03 15:02:46,796 INFO    SenderThread:68504 [dir_watcher.py:finish():397] scan save: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/requirements.txt requirements.txt
+2024-12-03 15:02:46,797 INFO    SenderThread:68504 [dir_watcher.py:finish():397] scan save: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json wandb-summary.json
+2024-12-03 15:02:46,797 INFO    SenderThread:68504 [sender.py:transition_state():393] send defer: 7
+2024-12-03 15:02:46,797 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:46,801 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: defer
+2024-12-03 15:02:46,801 INFO    HandlerThread:68504 [handler.py:handle_request_defer():163] handle defer: 7
+2024-12-03 15:02:46,801 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: defer
+2024-12-03 15:02:46,801 INFO    SenderThread:68504 [sender.py:send_request_defer():389] handle sender defer: 7
+2024-12-03 15:02:46,801 INFO    SenderThread:68504 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-03 15:02:46,902 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:46,902 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:47,003 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:47,003 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:47,104 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:47,105 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:47,206 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:47,206 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:47,307 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:47,307 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:47,408 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:47,409 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:47,510 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:47,510 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:47,611 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:47,611 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:47,712 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:47,712 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:47,813 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:47,813 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:47,914 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:47,915 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:48,016 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:48,016 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:48,117 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:48,117 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:48,218 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:48,218 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:48,319 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:48,320 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:48,421 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:48,421 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:48,522 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:48,522 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:48,623 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:48,624 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:48,725 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:48,725 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:48,750 INFO    Thread-12 :68504 [upload_job.py:push():138] Uploaded file /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/config.yaml
+2024-12-03 15:02:48,768 INFO    Thread-16 :68504 [upload_job.py:push():138] Uploaded file /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/wandb-summary.json
+2024-12-03 15:02:48,781 INFO    Thread-15 :68504 [upload_job.py:push():138] Uploaded file /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/requirements.txt
+2024-12-03 15:02:48,826 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:48,826 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:48,872 INFO    Thread-14 :68504 [upload_job.py:push():138] Uploaded file /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/conda-environment.yaml
+2024-12-03 15:02:48,875 INFO    Thread-13 :68504 [upload_job.py:push():138] Uploaded file /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/files/output.log
+2024-12-03 15:02:48,927 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:48,927 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:49,028 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:49,028 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:49,075 INFO    Thread-6  :68504 [sender.py:transition_state():393] send defer: 8
+2024-12-03 15:02:49,076 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: defer
+2024-12-03 15:02:49,076 INFO    HandlerThread:68504 [handler.py:handle_request_defer():163] handle defer: 8
+2024-12-03 15:02:49,076 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: defer
+2024-12-03 15:02:49,076 INFO    SenderThread:68504 [sender.py:send_request_defer():389] handle sender defer: 8
+2024-12-03 15:02:49,129 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:49,432 INFO    SenderThread:68504 [sender.py:transition_state():393] send defer: 9
+2024-12-03 15:02:49,432 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:49,433 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: defer
+2024-12-03 15:02:49,433 INFO    HandlerThread:68504 [handler.py:handle_request_defer():163] handle defer: 9
+2024-12-03 15:02:49,433 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: defer
+2024-12-03 15:02:49,433 INFO    SenderThread:68504 [sender.py:send_request_defer():389] handle sender defer: 9
+2024-12-03 15:02:49,433 INFO    SenderThread:68504 [sender.py:transition_state():393] send defer: 10
+2024-12-03 15:02:49,433 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: defer
+2024-12-03 15:02:49,434 INFO    HandlerThread:68504 [handler.py:handle_request_defer():163] handle defer: 10
+2024-12-03 15:02:49,433 DEBUG   SenderThread:68504 [sender.py:send():236] send: final
+2024-12-03 15:02:49,434 DEBUG   SenderThread:68504 [sender.py:send():236] send: footer
+2024-12-03 15:02:49,434 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: defer
+2024-12-03 15:02:49,434 INFO    SenderThread:68504 [sender.py:send_request_defer():389] handle sender defer: 10
+2024-12-03 15:02:49,533 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-03 15:02:49,534 DEBUG   SenderThread:68504 [sender.py:send_request():250] send_request: poll_exit
+2024-12-03 15:02:49,534 INFO    SenderThread:68504 [file_pusher.py:join():176] waiting for file pusher
+2024-12-03 15:02:51,459 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: sampled_history
+2024-12-03 15:02:51,461 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: get_summary
+2024-12-03 15:02:51,461 DEBUG   HandlerThread:68504 [handler.py:handle_request():140] handle_request: shutdown
+2024-12-03 15:02:51,461 INFO    HandlerThread:68504 [handler.py:finish():806] shutting down handler
+2024-12-03 15:02:52,359 INFO    SenderThread:68504 [sender.py:finish():1114] shutting down sender
+2024-12-03 15:02:52,359 INFO    SenderThread:68504 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-03 15:02:52,359 INFO    SenderThread:68504 [file_pusher.py:join():176] waiting for file pusher
+2024-12-03 15:02:52,434 INFO    WriterThread:68504 [datastore.py:close():279] close: /home/jiaojunpeng/isaac/LocomotionWithNP3O-masterV5/LocomotionWithNP3O-master/wandb/run-20241203_150154-djl68fch/run-djl68fch.wandb
+2024-12-03 15:02:52,434 INFO    MainThread:68504 [internal.py:handle_exit():80] Internal process exited
